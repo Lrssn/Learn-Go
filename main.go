@@ -1,49 +1,38 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
 func main() {
 
-	i := 2 //simple case statement
-	fmt.Print("Write ", i, " as ")
-	switch i {
-	case 1:
-		fmt.Println("one")
-	case 2:
-		fmt.Println("two")
-	case 3:
-		fmt.Println("three")
-	}
+	var a [5]int // array with 5 ints, ints defaults to 0
+	fmt.Println("emp:", a)
 
-	switch time.Now().Weekday() {
-	case time.Saturday, time.Sunday:
-		fmt.Println("It's the weekend")
-	default: // default is for all calues that has no specific case
-		fmt.Println("It's a weekday")
-	}
+	a[4] = 100 // set index 4(entry no 5 last entry) starts at 0
+	fmt.Println("set:", a)
+	fmt.Println("get:", a[4])
 
-	t := time.Now()
-	switch {
-	case t.Hour() < 12: // case can be any operator not only specific values
-		fmt.Println("It's before noon")
-	default:
-		fmt.Println("It's after noon")
-	}
+	fmt.Println("len:", len(a)) // get array length
 
-	whatAmI := func(i interface{}) { // function in function?
-		switch t := i.(type) { // variable type
-		case bool:
-			fmt.Println("I'm a bool")
-		case int:
-			fmt.Println("I'm an int")
-		default:
-			fmt.Printf("Don't know type %T\n", t)
+	b := [5]int{1, 2, 3, 4, 5} // initialize array with values
+	fmt.Println("dcl:", b)
+
+	b = [...]int{1, 2, 3, 4, 5} // compiler sets the length of the array
+	fmt.Println("dcl:", b)
+
+	b = [...]int{100, 3: 400, 500} // set [0]=100 [3]=400 [4]=500, [1] and [2] gets set to 0
+	fmt.Println("idx:", b)
+
+	var twoD [2][3]int // initialize 2D-array
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 3; j++ {
+			twoD[i][j] = i + j // set values in 2D-array
 		}
 	}
-	whatAmI(true)
-	whatAmI(1)
-	whatAmI("hey")
+	fmt.Println("2d: ", twoD)
+
+	twoD = [2][3]int{ // initialize values in 2D-array
+		{1, 2, 3},
+		{1, 2, 3},
+	}
+	fmt.Println("2d: ", twoD)
 }
