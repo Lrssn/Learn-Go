@@ -12,9 +12,9 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] For
 - [x] If/Else
 - [x] Switch
-- [ ] Arrays
-- [ ] Slices
-- [ ] Maps
+- [x] Arrays
+- [x] Slices
+- [x] Maps
 - [ ] Range
 - [ ] Functions
 - [ ] Multiple Return Values
