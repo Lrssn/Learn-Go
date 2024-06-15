@@ -19,7 +19,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Functions
 - [x] Multiple Return Values
 - [x] Variadic Functions
-- [ ] Closures
+- [x] Closures
 - [ ] Recursion
 - [ ] Pointers
 - [ ] Strings and Runes

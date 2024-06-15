@@ -2,21 +2,22 @@ package main
 
 import "fmt"
 
-func sum(nums ...int) { // variable number of ints. not set at compile time. could be zero?
-	fmt.Print(nums, " ")
-	total := 0
-
-	for _, num := range nums {
-		total += num
+func intSeq() func() int { // returns a function that returns a int
+	i := 0
+	return func() int { // return value is a function
+		i++
+		return i
 	}
-	fmt.Println(total)
 }
 
 func main() {
 
-	sum(1, 2) // call the function with how many variables youd like
-	sum(1, 2, 3)
+	nextInt := intSeq() // nextInt is a function that returns an int
 
-	nums := []int{1, 2, 3, 4}
-	sum(nums...) // call function with all values in a slice
+	fmt.Println(nextInt()) // the value of i is incremented each call
+	fmt.Println(nextInt()) // the value of i in nextint is the same number getting
+	fmt.Println(nextInt()) // incremented each call
+
+	newInts := intSeq()
+	fmt.Println(newInts()) // this increments a new i that is contained in newInts
 }
