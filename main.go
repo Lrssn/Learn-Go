@@ -2,22 +2,26 @@ package main
 
 import "fmt"
 
-func intSeq() func() int { // returns a function that returns a int
-	i := 0
-	return func() int { // return value is a function
-		i++
-		return i
+func fact(n int) int {
+	if n == 0 {
+		return 1
 	}
+	return n * fact(n-1) // this function calls itself
 }
 
 func main() {
+	fmt.Println(fact(7))
 
-	nextInt := intSeq() // nextInt is a function that returns an int
+	var fib func(n int) int // closures can be recursive if you declare them before usage
+	// like in c++ you have to declare functions before usage
 
-	fmt.Println(nextInt()) // the value of i is incremented each call
-	fmt.Println(nextInt()) // the value of i in nextint is the same number getting
-	fmt.Println(nextInt()) // incremented each call
+	fib = func(n int) int {
+		if n < 2 {
+			return n
+		}
 
-	newInts := intSeq()
-	fmt.Println(newInts()) // this increments a new i that is contained in newInts
+		return fib(n-1) + fib(n-2) // function that calls its own clusure function
+	}
+
+	fmt.Println(fib(7))
 }
