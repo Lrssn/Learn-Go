@@ -2,26 +2,23 @@ package main
 
 import "fmt"
 
-func fact(n int) int {
-	if n == 0 {
-		return 1
-	}
-	return n * fact(n-1) // this function calls itself
+func zeroval(ival int) { // copies ival
+	ival = 0 // sets copy to 0 not changing original
+}
+
+func zeroptr(iptr *int) {
+	*iptr = 0 // changes original
 }
 
 func main() {
-	fmt.Println(fact(7))
+	i := 1
+	fmt.Println("initial:", i)
 
-	var fib func(n int) int // closures can be recursive if you declare them before usage
-	// like in c++ you have to declare functions before usage
+	zeroval(i)
+	fmt.Println("zeroval:", i)
 
-	fib = func(n int) int {
-		if n < 2 {
-			return n
-		}
+	zeroptr(&i)
+	fmt.Println("zeroptr:", i)
 
-		return fib(n-1) + fib(n-2) // function that calls its own clusure function
-	}
-
-	fmt.Println(fib(7))
+	fmt.Println("pointer:", &i) // get address of i
 }

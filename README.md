@@ -21,7 +21,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Variadic Functions
 - [x] Closures
 - [x] Recursion
-- [ ] Pointers
+- [x] Pointers
 - [ ] Strings and Runes
 - [ ] Structs
 - [ ] Methods
