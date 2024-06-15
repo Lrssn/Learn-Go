@@ -1,38 +1,58 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices" // add slices library
+)
 
 func main() {
 
-	var a [5]int // array with 5 ints, ints defaults to 0
-	fmt.Println("emp:", a)
+	var s []string // slices are like c++ <vectors>
+	fmt.Println("uninit:", s, s == nil, len(s) == 0)
 
-	a[4] = 100 // set index 4(entry no 5 last entry) starts at 0
-	fmt.Println("set:", a)
-	fmt.Println("get:", a[4])
+	s = make([]string, 3) // create a slice with 3 (uninitialized = nil/zero)values
+	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
 
-	fmt.Println("len:", len(a)) // get array length
+	s[0] = "a" // set values like in arrays
+	s[1] = "b"
+	s[2] = "c"
+	fmt.Println("set:", s)
+	fmt.Println("get:", s[2])
 
-	b := [5]int{1, 2, 3, 4, 5} // initialize array with values
-	fmt.Println("dcl:", b)
+	fmt.Println("len:", len(s)) // length is now a function and not a property
 
-	b = [...]int{1, 2, 3, 4, 5} // compiler sets the length of the array
-	fmt.Println("dcl:", b)
+	s = append(s, "d") // add values to the end of slice
+	s = append(s, "e", "f")
+	fmt.Println("apd:", s)
 
-	b = [...]int{100, 3: 400, 500} // set [0]=100 [3]=400 [4]=500, [1] and [2] gets set to 0
-	fmt.Println("idx:", b)
+	c := make([]string, len(s)) // create a slice c with same length as s
+	copy(c, s)                  // copy the values from s to c
+	fmt.Println("cpy:", c)
 
-	var twoD [2][3]int // initialize 2D-array
-	for i := 0; i < 2; i++ {
-		for j := 0; j < 3; j++ {
-			twoD[i][j] = i + j // set values in 2D-array
-		}
+	l := s[2:5] // create slice with the values 3-6 from slice s
+	fmt.Println("sl1:", l)
+
+	l = s[:5] // create slice with all values until 6 from slice s
+	fmt.Println("sl2:", l)
+
+	l = s[2:] // create slice with all values from 3 from slice s
+	fmt.Println("sl3:", l)
+
+	t := []string{"g", "h", "i"} // declare slice t and initialize the values
+	fmt.Println("dcl:", t)
+
+	t2 := []string{"g", "h", "i"}
+	if slices.Equal(t, t2) { // compare two slices
+		fmt.Println("t == t2")
 	}
-	fmt.Println("2d: ", twoD)
 
-	twoD = [2][3]int{ // initialize values in 2D-array
-		{1, 2, 3},
-		{1, 2, 3},
+	twoD := make([][]int, 3) // 2D-slices are weird and can contain different amounts of values, WEIRD
+	for i := 0; i < 3; i++ {
+		innerLen := i + 1
+		twoD[i] = make([]int, innerLen)
+		for j := 0; j < innerLen; j++ {
+			twoD[i][j] = i + j
+		}
 	}
 	fmt.Println("2d: ", twoD)
 }
