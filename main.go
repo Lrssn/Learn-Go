@@ -4,29 +4,18 @@ import "fmt"
 
 func main() {
 
-	i := 1 // loop with existing value
-	for i <= 3 {
-		fmt.Println(i)
-		i = i + 1
+	if 8%2 == 0 || 7%2 == 0 { // ||=OR, &&=AND
+		fmt.Println("either 8 or 7 are even")
+	}
+	if 8%2 == 0 && 6%2 == 0 { // ||=OR, &&=AND
+		fmt.Println("both 8 and 6 are even")
 	}
 
-	for j := 0; j < 3; j++ { // loop with internal value
-		fmt.Println(j)
-	}
-
-	for i := range 3 { // loop with range
-		fmt.Println("range", i)
-	}
-
-	for { // loop will run forever/ until break
-		fmt.Println("loop")
-		break
-	}
-
-	for n := range 6 {
-		if n%2 == 0 {
-			continue // goto next instance of loop
-		}
-		fmt.Println(n)
+	if num := 9; num < 0 { // if-else if-else
+		fmt.Println(num, "is negative")
+	} else if num < 10 {
+		fmt.Println(num, "has 1 digit")
+	} else {
+		fmt.Println(num, "has multiple digits")
 	}
 }
