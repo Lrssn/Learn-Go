@@ -18,7 +18,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Range
 - [x] Functions
 - [x] Multiple Return Values
-- [ ] Variadic Functions
+- [x] Variadic Functions
 - [ ] Closures
 - [ ] Recursion
 - [ ] Pointers
