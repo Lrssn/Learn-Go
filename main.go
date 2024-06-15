@@ -1,20 +1,32 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
-
-const s string = "constant" // global constant
+import "fmt"
 
 func main() {
 
-	fmt.Println(s)
-	const n = 500000000 // local constant
+	i := 1 // loop with existing value
+	for i <= 3 {
+		fmt.Println(i)
+		i = i + 1
+	}
 
-	const d = 3e20 / n // 3*10^20
-	fmt.Println(d)
+	for j := 0; j < 3; j++ { // loop with internal value
+		fmt.Println(j)
+	}
 
-	fmt.Println(int64(d))    // d set to 64bit integer. prints without exponential
-	fmt.Println(math.Sin(n)) // math has functions i guess
+	for i := range 3 { // loop with range
+		fmt.Println("range", i)
+	}
+
+	for { // loop will run forever/ until break
+		fmt.Println("loop")
+		break
+	}
+
+	for n := range 6 {
+		if n%2 == 0 {
+			continue // goto next instance of loop
+		}
+		fmt.Println(n)
+	}
 }
