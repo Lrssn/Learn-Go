@@ -22,7 +22,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Closures
 - [x] Recursion
 - [x] Pointers
-- [ ] Strings and Runes
+- [x] Strings and Runes
 - [ ] Structs
 - [ ] Methods
 - [ ] Interfaces
