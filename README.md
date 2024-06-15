@@ -23,7 +23,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Recursion
 - [x] Pointers
 - [x] Strings and Runes
-- [ ] Structs
+- [x] Structs
 - [ ] Methods
 - [ ] Interfaces
 - [ ] Enums
