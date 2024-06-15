@@ -17,7 +17,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Maps
 - [x] Range
 - [x] Functions
-- [ ] Multiple Return Values
+- [x] Multiple Return Values
 - [ ] Variadic Functions
 - [ ] Closures
 - [ ] Recursion
