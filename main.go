@@ -1,21 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
+
+const s string = "constant" // global constant
 
 func main() {
 
-	var a = "initial" // string
-	fmt.Println(a)
+	fmt.Println(s)
+	const n = 500000000 // local constant
 
-	var b, c int = 1, 2 // multiple ints
-	fmt.Println(b, c)
-
-	var d = true // bool
+	const d = 3e20 / n // 3*10^20
 	fmt.Println(d)
 
-	var e int // empty int
-	fmt.Println(e)
-
-	f := "apple" // auto infer type
-	fmt.Println(f)
+	fmt.Println(int64(d))    // d set to 64bit integer. prints without exponential
+	fmt.Println(math.Sin(n)) // math has functions i guess
 }
