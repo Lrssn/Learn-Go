@@ -16,7 +16,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Slices
 - [x] Maps
 - [x] Range
-- [ ] Functions
+- [x] Functions
 - [ ] Multiple Return Values
 - [ ] Variadic Functions
 - [ ] Closures
