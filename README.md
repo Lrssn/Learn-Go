@@ -15,7 +15,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Arrays
 - [x] Slices
 - [x] Maps
-- [ ] Range
+- [x] Range
 - [ ] Functions
 - [ ] Multiple Return Values
 - [ ] Variadic Functions

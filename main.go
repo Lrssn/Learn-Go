@@ -1,41 +1,32 @@
 package main
 
-import (
-	"fmt"
-	"maps" // add lib maps
-)
+import "fmt"
 
 func main() {
 
-	m := make(map[string]int) // create map with map[key]value
+	nums := []int{2, 3, 4}
+	sum := 0
+	for _, num := range nums { // range from slice = len(slice)
+		sum += num
+	}
+	fmt.Println("sum:", sum)
 
-	m["k1"] = 7 // key=k1 value=7
-	m["k2"] = 13
+	for i, num := range nums { // return values for arrays and slices are [index, value]
+		if num == 3 {
+			fmt.Println("index:", i)
+		}
+	}
 
-	fmt.Println("map:", m)
+	kvs := map[string]string{"a": "apple", "b": "banana"}
+	for k, v := range kvs { // return value for maps are [key, value], range is number of entries
+		fmt.Printf("%s -> %s\n", k, v)
+	}
 
-	v1 := m["k1"] // get value from map using key=k1
-	fmt.Println("v1:", v1)
+	for k := range kvs { // with only one return value you get the keys from map
+		fmt.Println("key:", k)
+	}
 
-	v3 := m["k3"] // if value dont exist returns zero value for type
-	fmt.Println("v3:", v3)
-
-	fmt.Println("len:", len(m)) // length is the number of entries in the map
-
-	delete(m, "k2") // delete entry from map
-	fmt.Println("map:", m)
-
-	clear(m) // empty map
-	fmt.Println("map:", m)
-
-	_, prs := m["k2"] // second return value is bool if exists in map.
-	fmt.Println("prs:", prs)
-
-	n := map[string]int{"foo": 1, "bar": 2} // initialize map with values
-	fmt.Println("map:", n)
-
-	n2 := map[string]int{"foo": 1, "bar": 2}
-	if maps.Equal(n, n2) { // compare two maps
-		fmt.Println("n == n2")
+	for i, c := range "go" { // range in strings returns [index, unicode value]
+		fmt.Println(i, c)
 	}
 }
