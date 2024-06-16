@@ -1,46 +1,47 @@
 package main
 
-import (
-	"fmt"
-	"math"
+import "fmt"
+
+type ServerState int
+
+const (
+	StateIdle = iota // iota=keyword that generates succesive values
+	StateConnected
+	StateError
+	StateRetrying
 )
 
-type geometry interface {
-	area() float64
-	perim() float64
+var stateName = map[ServerState]string{ // maps state to string
+	StateIdle:      "idle",
+	StateConnected: "connected",
+	StateError:     "error",
+	StateRetrying:  "retrying",
 }
 
-type rect struct {
-	width, height float64
-}
-type circle struct {
-	radius float64
-}
-
-func (r rect) area() float64 { // interface implementation for rect
-	return r.width * r.height
-}
-func (r rect) perim() float64 {
-	return 2*r.width + 2*r.height
-}
-
-func (c circle) area() float64 { // interface implementation for circle
-	return math.Pi * c.radius * c.radius
-}
-func (c circle) perim() float64 {
-	return 2 * math.Pi * c.radius
-}
-
-func measure(g geometry) {
-	fmt.Println(g)
-	fmt.Println(g.area())
-	fmt.Println(g.perim())
+func (ss ServerState) String() string {
+	return stateName[ss]
 }
 
 func main() {
-	r := rect{width: 3, height: 4}
-	c := circle{radius: 5}
+	ns := transition(StateIdle)
+	fmt.Println(ns)
 
-	measure(r)
-	measure(c)
+	ns2 := transition(ns)
+	fmt.Println(ns2)
+}
+
+func transition(s ServerState) ServerState {
+	switch s {
+	case StateIdle:
+		return StateConnected
+	case StateConnected, StateRetrying:
+
+		return StateIdle
+	case StateError:
+		return StateError
+	default:
+		panic(fmt.Errorf("unwknown state: %s", s))
+	}
+
+	return StateConnected
 }

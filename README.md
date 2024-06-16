@@ -26,7 +26,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Structs
 - [x] Methods
 - [x] Interfaces
-- [ ] Enums
+- [x] Enums
 - [ ] Struct Embedding
 - [ ] Generics
 - [ ] Errors
