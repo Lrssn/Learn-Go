@@ -24,7 +24,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Pointers
 - [x] Strings and Runes
 - [x] Structs
-- [ ] Methods
+- [x] Methods
 - [ ] Interfaces
 - [ ] Enums
 - [ ] Struct Embedding

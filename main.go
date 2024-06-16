@@ -2,45 +2,25 @@ package main
 
 import "fmt"
 
-type person struct { // create struct
-	name string
-	age  int
+type rect struct {
+	width, height int
 }
 
-func newPerson(name string) *person {
+func (r *rect) area() int { // func(name *object type) func-name(params) return-type
+	return r.width * r.height // r is used as "self" in python i think
+}
 
-	p := person{name: name}
-	p.age = 42
-	return &p
+func (r rect) perim() int {
+	return 2*r.width + 2*r.height
 }
 
 func main() {
+	r := rect{width: 10, height: 5}
 
-	fmt.Println(person{"Bob", 20})
+	fmt.Println("area: ", r.area())
+	fmt.Println("perim:", r.perim())
 
-	fmt.Println(person{name: "Alice", age: 30})
-
-	fmt.Println(person{name: "Fred"})
-
-	fmt.Println(&person{name: "Ann", age: 40})
-
-	fmt.Println(newPerson("Jon"))
-
-	s := person{name: "Sean", age: 50}
-	fmt.Println(s.name)
-
-	sp := &s
-	fmt.Println(sp.age)
-
-	sp.age = 51
-	fmt.Println(sp.age)
-
-	dog := struct { // can also be created inline
-		name   string
-		isGood bool
-	}{
-		"Rex",
-		true,
-	}
-	fmt.Println(dog)
+	rp := &r
+	fmt.Println("area: ", rp.area())
+	fmt.Println("perim:", rp.perim())
 }
