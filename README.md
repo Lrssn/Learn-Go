@@ -25,7 +25,7 @@ Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlis
 - [x] Strings and Runes
 - [x] Structs
 - [x] Methods
-- [ ] Interfaces
+- [x] Interfaces
 - [ ] Enums
 - [ ] Struct Embedding
 - [ ] Generics

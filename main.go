@@ -1,26 +1,46 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
+
+type geometry interface {
+	area() float64
+	perim() float64
+}
 
 type rect struct {
-	width, height int
+	width, height float64
+}
+type circle struct {
+	radius float64
 }
 
-func (r *rect) area() int { // func(name *object type) func-name(params) return-type
-	return r.width * r.height // r is used as "self" in python i think
+func (r rect) area() float64 { // interface implementation for rect
+	return r.width * r.height
 }
-
-func (r rect) perim() int {
+func (r rect) perim() float64 {
 	return 2*r.width + 2*r.height
 }
 
+func (c circle) area() float64 { // interface implementation for circle
+	return math.Pi * c.radius * c.radius
+}
+func (c circle) perim() float64 {
+	return 2 * math.Pi * c.radius
+}
+
+func measure(g geometry) {
+	fmt.Println(g)
+	fmt.Println(g.area())
+	fmt.Println(g.perim())
+}
+
 func main() {
-	r := rect{width: 10, height: 5}
+	r := rect{width: 3, height: 4}
+	c := circle{radius: 5}
 
-	fmt.Println("area: ", r.area())
-	fmt.Println("perim:", r.perim())
-
-	rp := &r
-	fmt.Println("area: ", rp.area())
-	fmt.Println("perim:", rp.perim())
+	measure(r)
+	measure(c)
 }
