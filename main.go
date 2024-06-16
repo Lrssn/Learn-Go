@@ -2,46 +2,38 @@ package main
 
 import "fmt"
 
-type ServerState int
-
-const (
-	StateIdle = iota // iota=keyword that generates succesive values
-	StateConnected
-	StateError
-	StateRetrying
-)
-
-var stateName = map[ServerState]string{ // maps state to string
-	StateIdle:      "idle",
-	StateConnected: "connected",
-	StateError:     "error",
-	StateRetrying:  "retrying",
+type base struct {
+	num int
 }
 
-func (ss ServerState) String() string {
-	return stateName[ss]
+func (b base) describe() string {
+	return fmt.Sprintf("base with num=%v", b.num)
+}
+
+type container struct {
+	base // embeds a struct
+	str  string
 }
 
 func main() {
-	ns := transition(StateIdle)
-	fmt.Println(ns)
 
-	ns2 := transition(ns)
-	fmt.Println(ns2)
-}
-
-func transition(s ServerState) ServerState {
-	switch s {
-	case StateIdle:
-		return StateConnected
-	case StateConnected, StateRetrying:
-
-		return StateIdle
-	case StateError:
-		return StateError
-	default:
-		panic(fmt.Errorf("unwknown state: %s", s))
+	co := container{
+		base: base{ // the embeded struct get explicitly initialized
+			num: 1,
+		},
+		str: "some name",
 	}
 
-	return StateConnected
+	fmt.Printf("co={num: %v, str: %v}\n", co.num, co.str)
+
+	fmt.Println("also num:", co.base.num)
+
+	fmt.Println("describe:", co.describe())
+
+	type describer interface {
+		describe() string
+	}
+
+	var d describer = co
+	fmt.Println("describer:", d.describe())
 }
