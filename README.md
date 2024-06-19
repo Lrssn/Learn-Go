@@ -1,7 +1,11 @@
 # Go-Learn
-Just a repo for learning the Go language
+Just a repo for learning the [Go programming language](https://go.dev)
 
-Video tutorial := [Net Ninja](https://www.youtube.com/@NetNinja) Youtube Playlist [Go Tutorial (Golang) for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM)
+## Video Tutorials
+- [ ]  [Go Tutorial (Golang) for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM) By [Net Ninja](https://www.youtube.com/@NetNinja)
 
-1st tutorial := [Go by example](https://gobyexample.com/)
+## Web-based Tutorials
+- [ ] [Go by example](https://gobyexample.com/)
 
+## Books
+- [ ] --
