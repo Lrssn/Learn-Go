@@ -1,4 +1,4 @@
-# Go-Learn
+# Learn-Go
 Just a repo for learning the [Go programming language](https://go.dev)
 
 ## Video Tutorials
