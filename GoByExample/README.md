@@ -36,7 +36,7 @@
 - [x] Non-Blocking Channel Operations
 - [x] Closing Channels
 - [x] Range over Channels
-- [ ] Timers
+- [x] Timers
 - [ ] Tickers
 - [ ] Worker Pools
 - [ ] WaitGroups
