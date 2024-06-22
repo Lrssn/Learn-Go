@@ -37,7 +37,7 @@
 - [x] Closing Channels
 - [x] Range over Channels
 - [x] Timers
-- [ ] Tickers
+- [x] Tickers
 - [ ] Worker Pools
 - [ ] WaitGroups
 - [ ] Rate Limiting
