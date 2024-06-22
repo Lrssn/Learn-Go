@@ -34,7 +34,7 @@
 - [x] Select
 - [x] Timeouts
 - [x] Non-Blocking Channel Operations
-- [ ] Closing Channels
+- [x] Closing Channels
 - [ ] Range over Channels
 - [ ] Timers
 - [ ] Tickers
