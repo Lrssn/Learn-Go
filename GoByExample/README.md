@@ -26,7 +26,7 @@
 - [x] Generics
 - [x] Errors
 - [x] Custom Errors
-- [ ] Goroutines
+- [x] Goroutines
 - [ ] Channels
 - [ ] Channel Buffering
 - [ ] Channel Synchronization
