@@ -35,7 +35,7 @@
 - [x] Timeouts
 - [x] Non-Blocking Channel Operations
 - [x] Closing Channels
-- [ ] Range over Channels
+- [x] Range over Channels
 - [ ] Timers
 - [ ] Tickers
 - [ ] Worker Pools
