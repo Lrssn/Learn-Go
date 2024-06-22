@@ -38,7 +38,7 @@
 - [x] Range over Channels
 - [x] Timers
 - [x] Tickers
-- [ ] Worker Pools
+- [x] Worker Pools
 - [ ] WaitGroups
 - [ ] Rate Limiting
 - [ ] Atomic Counters
