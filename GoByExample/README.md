@@ -39,7 +39,7 @@
 - [x] Timers
 - [x] Tickers
 - [x] Worker Pools
-- [ ] WaitGroups
+- [x] WaitGroups
 - [ ] Rate Limiting
 - [ ] Atomic Counters
 - [ ] Mutexes
