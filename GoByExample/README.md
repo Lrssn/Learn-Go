@@ -24,7 +24,7 @@
 - [x] Enums
 - [x] Struct Embedding
 - [x] Generics
-- [ ] Errors
+- [x] Errors
 - [ ] Custom Errors
 - [ ] Goroutines
 - [ ] Channels
