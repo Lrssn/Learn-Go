@@ -32,7 +32,7 @@
 - [x] Channel Synchronization
 - [x] Channel Directions
 - [x] Select
-- [ ] Timeouts
+- [x] Timeouts
 - [ ] Non-Blocking Channel Operations
 - [ ] Closing Channels
 - [ ] Range over Channels
