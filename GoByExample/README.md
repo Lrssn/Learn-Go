@@ -25,7 +25,7 @@
 - [x] Struct Embedding
 - [x] Generics
 - [x] Errors
-- [ ] Custom Errors
+- [x] Custom Errors
 - [ ] Goroutines
 - [ ] Channels
 - [ ] Channel Buffering
