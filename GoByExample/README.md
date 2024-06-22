@@ -23,7 +23,7 @@
 - [x] Interfaces
 - [x] Enums
 - [x] Struct Embedding
-- [ ] Generics
+- [x] Generics
 - [ ] Errors
 - [ ] Custom Errors
 - [ ] Goroutines
