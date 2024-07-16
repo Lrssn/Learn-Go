@@ -40,7 +40,7 @@
 - [x] Tickers
 - [x] Worker Pools
 - [x] WaitGroups
-- [ ] Rate Limiting
+- [x] Rate Limiting
 - [ ] Atomic Counters
 - [ ] Mutexes
 - [ ] Stateful Goroutines
