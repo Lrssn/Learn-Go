@@ -9,3 +9,30 @@ Just a repo for learning the [Go programming language](https://go.dev), [Docker]
 
 ## Books
 - [ ] --
+
+# Learn Docker
+## Video Tutorials
+- [ ] --
+## Web-based Tutorials
+- [ ] --
+## Books
+- [ ] --
+# Learn Server
+## Video Tutorials
+- [ ] --
+## Web-based Tutorials
+- [ ] --
+## Books
+- [ ] --
+
+
+# Tasks
+- [ ] Set up Http Server
+- [ ] Serve HTML
+- [ ] Serve CSS/JS
+- [ ] Serve Static Files
+- [ ] Set up Https Server
+- [ ] Set up Linux
+- [ ] Set up Docker
+- [ ] CLient that sends many requests
+- [ ] Server that can handle all requests asynchronosly
