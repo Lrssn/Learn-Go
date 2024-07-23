@@ -17,5 +17,5 @@ func main() {
 
 	mayPanic()
 
-	fmt.Println("After mayPanic()")
+	fmt.Println("After mayPanic()") // This code will not run due to the panic.
 }
