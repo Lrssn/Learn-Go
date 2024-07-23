@@ -42,7 +42,7 @@
 - [x] WaitGroups
 - [x] Rate Limiting
 - [x] Atomic Counters
-- [ ] Mutexes
+- [x] Mutexes
 - [ ] Stateful Goroutines
 - [ ] Sorting
 - [ ] Sorting by Functions
