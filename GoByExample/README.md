@@ -49,7 +49,7 @@
 - [x] Panic
 - [x] Defer
 - [x] Recover
-- [ ] String Functions
+- [x] String Functions
 - [ ] String Formatting
 - [ ] Text Templates
 - [ ] Regular Expressions
