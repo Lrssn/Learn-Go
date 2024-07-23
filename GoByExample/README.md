@@ -51,7 +51,7 @@
 - [x] Recover
 - [x] String Functions
 - [x] String Formatting
-- [ ] Text Templates
+- [x] Text Templates
 - [ ] Regular Expressions
 - [ ] JSON
 - [ ] XML
