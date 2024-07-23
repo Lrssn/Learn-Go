@@ -43,7 +43,7 @@
 - [x] Rate Limiting
 - [x] Atomic Counters
 - [x] Mutexes
-- [ ] Stateful Goroutines
+- [x] Stateful Goroutines
 - [ ] Sorting
 - [ ] Sorting by Functions
 - [ ] Panic
