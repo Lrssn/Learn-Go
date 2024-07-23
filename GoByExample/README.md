@@ -50,7 +50,7 @@
 - [x] Defer
 - [x] Recover
 - [x] String Functions
-- [ ] String Formatting
+- [x] String Formatting
 - [ ] Text Templates
 - [ ] Regular Expressions
 - [ ] JSON
