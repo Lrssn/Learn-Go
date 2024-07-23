@@ -46,7 +46,7 @@
 - [x] Stateful Goroutines
 - [x] Sorting
 - [x] Sorting by Functions
-- [ ] Panic
+- [x] Panic
 - [ ] Defer
 - [ ] Recover
 - [ ] String Functions
