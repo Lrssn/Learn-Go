@@ -60,7 +60,7 @@
 - [x] Time Formatting / Parsing
 - [x] Random Numbers
 - [x] Number Parsing
-- [ ] URL Parsing
+- [x] URL Parsing
 - [ ] SHA256 Hashes
 - [ ] Base64 Encoding
 - [ ] Reading Files
