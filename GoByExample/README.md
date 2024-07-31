@@ -53,7 +53,7 @@
 - [x] String Formatting
 - [x] Text Templates
 - [x] Regular Expressions
-- [ ] JSON
+- [x] JSON
 - [ ] XML
 - [ ] Time
 - [ ] Epoch
