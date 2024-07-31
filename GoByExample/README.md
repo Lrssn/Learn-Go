@@ -57,7 +57,7 @@
 - [x] XML
 - [x] Time
 - [x] Epoch
-- [ ] Time Formatting / Parsing
+- [x] Time Formatting / Parsing
 - [ ] Random Numbers
 - [ ] Number Parsing
 - [ ] URL Parsing
