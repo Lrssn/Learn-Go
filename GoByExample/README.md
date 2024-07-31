@@ -59,7 +59,7 @@
 - [x] Epoch
 - [x] Time Formatting / Parsing
 - [x] Random Numbers
-- [ ] Number Parsing
+- [x] Number Parsing
 - [ ] URL Parsing
 - [ ] SHA256 Hashes
 - [ ] Base64 Encoding
