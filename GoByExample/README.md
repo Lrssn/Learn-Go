@@ -62,7 +62,7 @@
 - [x] Number Parsing
 - [x] URL Parsing
 - [x] SHA256 Hashes
-- [ ] Base64 Encoding
+- [x] Base64 Encoding
 - [ ] Reading Files
 - [ ] Writing Files
 - [ ] Line Filters
