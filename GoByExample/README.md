@@ -63,13 +63,13 @@
 - [x] URL Parsing
 - [x] SHA256 Hashes
 - [x] Base64 Encoding
-- [ ] Reading Files
-- [ ] Writing Files
-- [ ] Line Filters
-- [ ] File Paths
-- [ ] Directories
-- [ ] Temporary Files and Directories
-- [ ] Embed Directive
+- [x] Reading Files
+- [x] Writing Files
+- [x] Line Filters
+- [x] File Paths
+- [x] Directories
+- [x] Temporary Files and Directories
+- [x] Embed Directive
 - [ ] Testing and Benchmarking
 - [ ] Command-Line Arguments
 - [ ] Command-Line Flags
