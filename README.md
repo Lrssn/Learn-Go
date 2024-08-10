@@ -7,7 +7,7 @@ The end goal is to run a modern secure server using Go as the backend
 - [ ]  [Learning Web Development in Go](https://www.youtube.com/playlist?list=PLj8CKwvX6i6b6avGkK_YI5diij73D_NoT) By [Go Web Examples](https://www.youtube.com/@gowebexamples1452)
 
 ## Web-based Tutorials/Articles
-- [ ] [Go by example](https://gobyexample.com/)
+- [x] [Go by example](https://gobyexample.com/)
 - [ ] [Writing Web Applications](https://go.dev/doc/articles/wiki/)
 - [ ] [Building a Basic HTTP Server in Go: A Step-by-Step Tutorial](https://dev.to/andyjessop/building-a-basic-http-server-in-go-a-step-by-step-tutorial-ma4)
 - [ ] [Creating a web server with Golang](https://blog.logrocket.com/creating-a-web-server-with-golang/)
