@@ -70,7 +70,7 @@
 - [x] Directories
 - [x] Temporary Files and Directories
 - [x] Embed Directive
-- [ ] Testing and Benchmarking
+- [x] Testing and Benchmarking
 - [ ] Command-Line Arguments
 - [ ] Command-Line Flags
 - [ ] Command-Line Subcommands
