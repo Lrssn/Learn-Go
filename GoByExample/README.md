@@ -77,7 +77,7 @@
 - [x] Environment Variables
 - [x] Logging
 - [x] HTTP Client
-- [ ] HTTP Server
+- [x] HTTP Server
 - [ ] Context
 - [ ] Spawning Processes
 - [ ] Exec'ing Processes
