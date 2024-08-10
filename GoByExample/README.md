@@ -78,7 +78,7 @@
 - [x] Logging
 - [x] HTTP Client
 - [x] HTTP Server
-- [ ] Context
+- [x] Context
 - [ ] Spawning Processes
 - [ ] Exec'ing Processes
 - [ ] Signals
