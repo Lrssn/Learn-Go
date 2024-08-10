@@ -80,6 +80,6 @@
 - [x] HTTP Server
 - [x] Context
 - [x] Spawning Processes
-- [ ] Exec'ing Processes
+- [x] Exec'ing Processes
 - [ ] Signals
 - [ ] Exit
