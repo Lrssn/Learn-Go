@@ -75,7 +75,7 @@
 - [x] Command-Line Flags
 - [x] Command-Line Subcommands
 - [x] Environment Variables
-- [ ] Logging
+- [x] Logging
 - [ ] HTTP Client
 - [ ] HTTP Server
 - [ ] Context
